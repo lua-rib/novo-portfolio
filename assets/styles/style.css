@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --cor-primaria: #13181f;
+    --cor-secundaria: #060f18;
+    --cor-terciaria: #64FFDA;
+    --cor-quarteneria: #CCD6F6;
+    --cor-hover: #FFFFFF;
+
+    --fonte-primaria: 'Nunito', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    color: var(--cor-quarteneria);
+}
+
+/* header */
+.menu_navegacao ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 5em;
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.menu_navegacao ul a {
+    text-decoration: none;
+    color: var(--cor-quarteneria);
+    
+}
+
+.menu_navegacao ul a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* home */
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8em;
+    
+}
+.sobre_foto {
+    width: 25em;
+    height: 25em;
+}
+
+/* sobre mim */
+
+
+#sobre_mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8em;
+    
+}
+
+.code_foto {
+    width: 25em;
+    height: 25em;
+}
+
+/* habilidades */
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    gap: 30em;
+   
+}
+
+.lista .lista_icones {
+ width: 1px;
+    height: 10px;
+}
+
+
