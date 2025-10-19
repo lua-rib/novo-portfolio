@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --cor-primaria: #13181f;
-    --cor-secundaria: #060f18;
-    --cor-terciaria: #64FFDA;
-    --cor-quarteneria: #CCD6F6;
-    --cor-hover: #FFFFFF;
+    --cor-um: #13181f;
+    --cor-dois: #11161c;
+    --cor-tres: #64FFDA;
+    --cor-quatro: #CCD6F6;
+    --cor-cinco: #FFFFFF;
+    --cor-seis: #0f1619;
 
-    --fonte-primaria: 'Nunito', sans-serif;
+    --fonte-um: 'Nunito', sans-serif;
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
 }
 
 body {
-    background: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
-    color: var(--cor-quarteneria);
+    background: var(--cor-um);
+    font-family: var(--fonte-um);
+    color: var(--cor-quatro);
 }
 
 /* header */
@@ -35,56 +36,198 @@ body {
 
 .menu_navegacao ul a {
     text-decoration: none;
-    color: var(--cor-quarteneria);
+    color: var(--cor-quatro);
     
 }
 
-.menu_navegacao ul a:hover {
-    color: var(--cor-secundaria);
+.menu_navegacao ul a:cinco {
+    color: var(--cor-dois);
+    background: var(--cor-cinco);
+    padding: 10px;
+    border-radius: 2px;
 }
 
 /* home */
 
 #home {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 8em;
     
 }
+
+.home_page {
+    padding: 0px;
+}
+
 .sobre_foto {
     width: 25em;
     height: 25em;
 }
 
-/* sobre mim */
+.saudacao {
+    font-size: 32px;
+}
 
+.saudacao_nome {
+    font-size: 44px;
+}
+
+.saudacao_stack {
+    font-size: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: digitarApagar 6s steps(26) infinite, piscar 0.8s infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes digitarApagar {
+    0%   { width: 0ch; }
+    40%  { width: 26ch; }  
+    40%  { width: 26ch; }  
+    100% { width: 0ch; }   
+  }
+
+  @keyframes piscar {
+    50% { border-color: transparent; }
+  }
+
+.botoes {
+    background: var(--cor-um);
+}
+  
+/* sobre mim */
 
 #sobre_mim {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: right;
     margin-top: 8em;
+    pointer-events: auto;
+    background: var(--cor-dois);
+    align-items: center;
+}
+
+.sobre_titulo {
     
 }
 
 .code_foto {
     width: 25em;
     height: 25em;
+    margin-right: 10em;
 }
 
 /* habilidades */
 
+#habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+}
+
 .lista {
     display: flex;
     flex-direction: row;
-    gap: 30em;
-   
+    list-style-type: none;
 }
 
 .lista .lista_icones {
- width: 1px;
-    height: 10px;
+    border: 2px solid var(--cor-seis);
+    border-radius: 20px; 
+    padding: 15px 20px;
+    margin: 10px;
+    background: var(--cor-seis);
+    color: var(--cor-cinco);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.lista .lista_icones img {
+    width: 5em;
+    height: 5em;
+}
+
+/* formação */
+
+#formacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    background: var(--cor-dois);
+    padding: 6em;
+}
+
+.lista_formacao {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.lista_formacao .lista_cursos {
+    border: 2px solid var(--cor-quatro);
+    border-radius: 20px; 
+    padding: 15px 20px;
+    margin: 10px;
+    background: var(--cor-quatro);
+    color: var(--cor-dois);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.lista_formacao .lista_cursos img {
+    width: 5em;
+    height: 5em;
+    
+}
+
+/* projetos */
+
+#projetos {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+/* contato */
+#form-email {
+    background: var(--cor-dois);
+    display: flex;
+    justify-content: center;
 }
 
 
+/* sidebar */
+.sidebar-social {
+    position: fixed; 
+    left: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
+    padding: 10px;
+}
+
+
+.lista-social {
+    display: flex;
+    flex-direction: column; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 15px; 
+}
+
+.lista-social a img {
+    width: 28px; 
+    height: 28px;
+    transition: transform 0.3s;
+}
+
+.lista-social a:hover img {
+    transform: scale(1.1);
+}
