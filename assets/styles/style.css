@@ -22,9 +22,16 @@ body {
   overflow-x: hidden;
 }
 
-
-
 /* header */
+
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: var(--cor-um);
+}
+
 .menu_navegacao ul {
   display: flex;
   flex-direction: row;
@@ -34,6 +41,7 @@ body {
   margin-top: 1em;
   list-style-type: none;
   font-size: 18.5px;
+  padding-bottom: 1em;
 }
 
 .menu_navegacao ul a {
@@ -270,6 +278,8 @@ section {
 #projetos {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 50px;
 }
 
@@ -357,4 +367,87 @@ section {
 
 .lista-social a:hover img {
   transform: scale(1.1);
+}
+
+/* reponsividade */
+
+@media (max-width: 1024px) {
+    .menu_navegacao ul {
+        margin-right: 2em;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    #home {
+        padding: 0 5%;
+    }
+
+    .sobre_foto {
+        width: 20em;
+        height: 20em;
+    }
+
+    .code_foto {
+        width: 20em;
+        height: 20em;
+        margin-right: 2em;
+    }
+
+    .sobre_texto {
+        margin-right: 2em;
+    }
+
+    .lista, .lista_formacao {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-social {
+        display: none;
+    }
+
+    .menu_navegacao ul {
+        justify-content: center;
+        margin: 1em 0;
+        padding: 0 10px;
+    }
+
+    #home, #sobre_mim {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .home_page, .foto_home {
+        max-width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .sobre_foto, .code_foto {
+        width: 18em;
+        height: 18em;
+        margin-top: 20px;
+    }
+
+    .lista, .lista_formacao {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    
+    .lista .lista_icones, .lista_formacao .lista_cursos {
+        min-width: 45%;
+        min-height: auto;
+        padding: 10px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    #projetos {
+        font-size: 28px;
+    }
 }
