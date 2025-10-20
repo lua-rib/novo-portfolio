@@ -6,13 +6,14 @@
     <title>Luana Ribeiro | Desenvolvedora full-stack</title>
     <link rel="shortcut icon" type="image/png" href="letra-l.png"/>
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
     <body>
         <header class="menu">
             <nav class="menu_navegacao">
                 <ul>
                     <li><a href="#home" class="link">Início</a></li>
-                    <li><a href="#sobre" class="link">Sobre Mim</a></li>
+                    <li><a href="#sobre" class="link">Sobre mim</a></li>
                     <li><a href="#habilidades" class="link">Habilidades</a></li>
                     <li><a href="#formacao" class="link">Formação</a></li>
                     <li><a href="#projetos" class="link">Projetos</a></li>
@@ -22,106 +23,116 @@
         </header>
 
         <aside class="sidebar-social">
-    <ul class="lista-social">
-        <li><a href="https://www.linkedin.com/in/luana-ribeiro-dos-santos/" target="_blank"><img src="./assets/imgs/linkedin.png" alt="LinkedIn"></a></li>
-        <li><a href="https://github.com/lua-rib" target="_blank"><img src="./assets/imgs/github2.png" alt="GitHub"></a></li>
-    </ul>
-</aside>
-    <main class="one_page">
+            <ul class="lista-social">
+                <li><a href="https://www.linkedin.com/in/luana-ribeiro-dos-santos/" target="_blank" rel="noopener noreferrer"><img src="./assets/imgs/linkedin.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/lua-rib" target="_blank" rel="noopener noreferrer"><img src="./assets/imgs/github2.png" alt="GitHub"></a></li>
+            </ul>
+        </aside>
+        
+        <main class="one_page">
 
-        <section id="home">
-            
-            <div class="home_page">
-                <h2 class="saudacao">Olá! Sou</h2>
-                <h1 class="saudacao_nome">Luana Ribeiro</h1>
-                <p class="saudacao_stack"> DESENVOLVEDORA FULL-STACK</p>
-                <p class="apresentacao__conteudo__texto"> Estudante de Análise e Desenvolvimento de Sistemas,<br> com foco em web desenvolvimento. <br>Sou apaixonada por tecnologia e estou construindo <br>minha jornada como desenvolvedora full-stack, <br>unindo criatividade, lógica e boas práticas de código.
-                </p>
-                    <div class="botoes">
-                        <button class="curriculo">Curriculo</button>
-                        <button class="contato">Fale comigo</button>
-                    </div>
-            </div>
-            
-            <div class="foto_home">
-                    <img src="./assets/imgs/perfil.png" alt="foto da Luana Ribeiro" class="sobre_foto">
-            </div>
-        </section>
-
-        <section id="sobre_mim">
-            
-            <div class="foto_sobre">
-                <img src="./assets/imgs/code.png" alt="foto da Luana Ribeiro" class="code_foto">
-            </div>
-            
-            <div>
-                    <h3 class="sobre_titulo">Sobre mim</h3>
-                    <h3 class="sobre_nome">Luana Ribeiro</h3>
-                    <p class="sobre_texto">
-                         Atualmente estou aprendendo desenvolvimento web full stack,<br> estudando JavaScript e TypeScript<br>
-                         para front-end e back-end, além de ferramentas e frameworks <br> como React (Hooks, Redux), Node.js, Express e NoSQL.<br>
-                         Estou em busca de colaborar em projetos de desenvolvimento web.<br>
-                         Almejo aperfeiçoar as minha técnicas em frameworks modernos <br> e boas práticas no desenvolvimento de sistemas.
+            <section id="home" data-aos="fade-up">
+                
+                <div class="home_page">
+                    <h2 class="saudacao">Olá! Sou</h2>
+                    <h1 class="saudacao_nome">Luana Ribeiro</h1>
+                    <p class="saudacao_stack"> DESENVOLVEDORA FULL-STACK</p>
+                    <p class="apresentacao__conteudo__texto"> Estudante de Análise e Desenvolvimento de Sistemas,<br> com foco em web desenvolvimento. <br>Sou apaixonada por tecnologia e estou construindo <br>minha jornada como desenvolvedora full-stack, <br>unindo criatividade, lógica e boas práticas de código.<br>
+                        <div class="botao_curriculo">
+                            <a href="./assets/docs/curriculo.pdf" target="_blank" rel="noopener noreferrer" class="curriculo">Currículo</a>
+                        </div>
+                        
                     </p>
                 </div>
                 
-        </section>
-
-        <section id="habilidades">
-            <div class="icons">
-                <h3 class="habilidades">Habilidades</h3> 
-                <ul class="lista">
-                    <li class="lista_icones"><img src="./assets/imgs/html-5.png" alt="icone_html" id="html"><br>HTML5
-                    <li class="lista_icones"><img src="./assets/imgs/js.png" alt="icone_js" id="js"><br>Javascript
-                    <li class="lista_icones"><img src="./assets/imgs/css-3.png" alt="icone_css" id="css"><br>CSS
-                    <li class="lista_icones"><img src="./assets/imgs/github.png" alt="icone_git" id="git"><br>Git
-                    <li class="lista_icones"><img src="./assets/imgs/git.png" alt="icone_github" id="github"><br>Github
-                </ul>
-            </div>
-        </section>
-
-        <section id="formacao">
-            <div class="cursos">
-                <h3 class="lista_cursos">Formação</h3> 
-                <ul class="lista_formacao">
-                    <li class="lista_cursos"><img src="./assets/imgs/anhanguera.png" alt="icone_anhanguera" id="anhanguera"><strong>Análise e Desenvolvimento de Sistemas</strong> - Tecnólogo <strong>Março de 2024 - em curso.</strong>
-                    <li class="lista_cursos"><img src="./assets/imgs/alura.png" alt="icone_alura" id="alura"><strong>Front-end</strong> (HTML, CSS e Javascript) <strong>Dezembro de 2024 - Março de 2025</strong>
-                    <li class="lista_cursos"><img src="./assets/imgs/senai.png" alt="icone_senai" id="senai"><strong>Front-end</strong> (HTML, CSS, Javascript e React) <strong>Outubro de 2025 - em curso.</strong>
-                    <li class="lista_cursos"><img src="./assets/imgs/ada.png" alt="icone_ada" id="ada"><strong>Back-end</strong> (Java, Spring, Docker, Git e testes)<strong>Outubro de 2025 - em curso.</strong>
-                    <li class="lista_cursos"><img src="./assets/imgs/udemy.png" alt="icone_udemy" id="udemy"><strong>Javascript e TypeScript</strong> front-end e back-end (Full Stack) - (Node, Express, noSQL, React, hooks, Redux, Design Patterns)<strong>Outubro de 2025 - em curso.</strong>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projetos">
-            <h1 class="projetos_feitos">EM CONSTRUÇÃO ⚠    
-        </section>
-
-        <section id="form-email">
-            <h2>Envie uma mensagem</h2>
-
-            <form action="#" method="post">
-                <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <div class="foto_home">
+                        <img src="./assets/imgs/perfil.png" alt="foto da Luana Ribeiro" class="sobre_foto">
                 </div>
+            </section>
 
-                <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <section id="sobre_mim" data-aos="fade-up" data-aos-duration="800">
+                
+                <div class="foto_sobre" data-aos="fade-right">
+                    <img src="./assets/imgs/code.png" alt="foto da Luana Ribeiro" class="code_foto">
                 </div>
+                
+                <div data-aos="fade-left" class="sobre">
+                        <h3 class="sobre_titulo">Sobre mim</h3>
+                        <h3 class="sobre_nome">Luana Ribeiro</h3>
+                        <p class="sobre_texto">
+                            Atualmente estou aprendendo desenvolvimento web full stack,<br> estudando JavaScript e TypeScript<br>
+                            para front-end e back-end, além de ferramentas e frameworks <br> como React (Hooks, Redux), Node.js, Express e NoSQL.<br>
+                            Estou em busca de colaborar em projetos de desenvolvimento web.<br>
+                            Almejo aperfeiçoar as minha técnicas em frameworks modernos <br> e boas práticas no desenvolvimento de sistemas.
+                        </p>
+                    </div>
+                    
+            </section>
 
-                <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <section id="habilidades">
+                <div class="icons">
+                    <h3 class="habilidades" data-aos="fade-down">Habilidades</h3> 
+                    <ul class="lista">
+                        <li class="lista_icones" data-aos="fade-up" data-aos-duration="600"><img src="./assets/imgs/html-5.png" alt="icone_html" id="html"><br>HTML5
+                        <li class="lista_icones" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100"><img src="./assets/imgs/js.png" alt="icone_js" id="js"><br>Javascript
+                        <li class="lista_icones" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200"><img src="./assets/imgs/css-3.png" alt="icone_css" id="css"><br>CSS
+                        <li class="lista_icones" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300"><img src="./assets/imgs/github.png" alt="icone_git" id="git"><br>Git
+                        <li class="lista_icones" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><img src="./assets/imgs/git.png" alt="icone_github" id="github"><br>Github
+                    </ul>
                 </div>
+            </section>
 
-                <button type="submit">Enviar</button>
-            </form>
-</section>
+            <section id="formacao">
+                <div class="cursos">
+                    <h3 class="formacao" data-aos="fade-down">Formação</h3> 
+                    <ul class="lista_formacao">
+                        <li class="lista_cursos" data-aos="fade-right" data-aos-duration="800"><img src="./assets/imgs/anhanguera.png" alt="icone_anhanguera" id="anhanguera" class="icone"><strong>Análise e<br> Desenvolvimento de Sistemas</strong> - Tecnólogo <strong>Março de 2024 - em curso.</strong>
+                        <li class="lista_cursos" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"><img src="./assets/imgs/alura.png" alt="icone_alura" id="alura" class="icone"><strong>Front-end</strong> (HTML, CSS e Javascript) <strong>Dezembro de 2024 - Março de 2025</strong>
+                        <li class="lista_cursos" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"><img src="./assets/imgs/senai.png" alt="icone_senai" id="senai" class="icone"><strong>Front-end</strong> (HTML, CSS, Javascript e React) <strong>Outubro de 2025 - em curso.</strong>
+                        <li class="lista_cursos" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300"><img src="./assets/imgs/ada.png" alt="icone_ada" id="ada" class="icone"><strong>Back-end</strong> (Java, Spring, Docker, Git e testes)<strong>Outubro de 2025 - em curso.</strong>
+                        <li class="lista_cursos" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"><img src="./assets/imgs/udemy.png" alt="icone_udemy" id="udemy" class="icone"><strong>Javascript e TypeScript</strong> front-end e back-end (Full Stack) <br> (Node, Express, noSQL, <br>React, hooks, Redux, Design Patterns)<strong>Outubro de 2025 - em curso.</strong>
+                    </ul>
+                </div>
+            </section>
 
+            <section id="projetos" data-aos="fade-up">
+                <h1 class="projetos_feitos">EM CONSTRUÇÃO ⚠  	
+            </section>
+
+            <section id="form-email">
+                <h2 class="formulario" data-aos="fade-down">Envie uma mensagem</h2>
+
+                <form action="https://formsubmit.co/rsantos.luana@gmail.com" method="POST" class="form">
+                    <div class="form_mensagem">
+                        <label for="nome" class="nome"><label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+
+                    <div class="enviar_email">
+                        <label for="email" class="email"><label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="enviar_assunto">
+                        <label for="assunto" class="assunto"><label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+                    </div>
+
+                    <div class="enviar_mensagem">
+                        <label for="mensagem" class="mensagem"></label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="enviar" >Enviar</button>
+                </form>
+            </section>
+
+        </main>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         
-    </main>
-    
-</body>
+    </body>
 </html>
