@@ -59,7 +59,6 @@ body {
 /* rolagem */
 
 main.one_page {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   padding-top: 50px;
 }
@@ -348,6 +347,24 @@ section {
   transform: translateY(-50%);
   z-index: 1000;
   padding: 10px;
+}
+
+.sidebar-voltar {
+  position:fixed;
+  left: 90em;
+  top: 90%;
+  transform: translateY(-30%);
+  padding: 10px;
+  
+}
+
+.sidebar-voltar a img {
+  width: 40px; 
+  height: 40px;
+}
+
+.sidebar-voltar:hover {
+  transform: scale(1);
 }
 
 .lista-social {
