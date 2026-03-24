@@ -4,7 +4,7 @@ Este é o mue portfólio, desenvolvido como parte de estudos em **HTML**, **CSS*
 ## 🔗 Demonstração
 
 Você pode acessar o projeto online clicando no link abaixo:
-👉 <[https://novo-portf.netlify.app/](https://novo-portfolio-0hfk.onrender.com/)>
+👉 <https://novo-portfolio-0hfk.onrender.com/>
 
 ## 🛠️ Tecnologias Utilizadas
 
