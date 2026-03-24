@@ -96,63 +96,91 @@
             </section>
 
             <section id="projetos" data-aos="fade-up">
-                <div class="projetos-secao">
-                    <h2 class="titulo-projetos">Projetos</h2>
-                    <div class="carrossel-container">
-                        
-                        <div class="projeto-item">
-                            <a href="https://agenda-xda4.onrender.com/" target="_blank" class="projeto-card">
-                                <img src="./assets/imgs/agenda.png" alt="Miniatura do Projeto 1">
-                            </a>
-                            <div class="projeto-info">
-                                <strong class="agenda">Agenda</strong>
-                                <p class="descricao">Sistema completo de gerenciamento de contatos com Node.js, Express e MongoDB.</p>
-                            </div>
-                        </div>
-
-                        <div class="projeto-item">
-                            <a href="https://seu-deploy-2.com" target="_blank" class="projeto-card">
-                                <img src="caminho-da-sua-miniatura-2.jpg" alt="Miniatura do Projeto 2">
-                            </a>
-                            <div class="projeto-info">
-                                <strong>Nome do Projeto 2</strong>
-                                <p>Descrição da automação ou sistema desenvolvido.</p>
-                            </div>
-                        </div>
-
+    <div class="projetos-secao">
+        <h2 class="titulo-projetos" style="text-align: center; width: 100%; margin-bottom: 30px;">Projetos</h2>
+        <div class="carrossel-wrapper-alinhado">
+            <div class="carrossel-container" id="meu-carrossel">
+                <div class="projeto-item">
+                    <a href="https://agenda-xda4.onrender.com/" target="_blank" class="projeto-card">
+                        <img src="./assets/imgs/agenda.png" alt="Agenda">
+                    </a>
+                    <div class="projeto-info">
+                        <strong>Agenda</strong>
+                        <p>Sistema completo de gerenciamento de contatos com Node.js, Express e MongoDB.</p>
                     </div>
                 </div>
-            </section>
-
-            <section id="form-email">
-                <h2 class="formulario" data-aos="fade-down">Envie uma mensagem</h2>
-
-                <form action="https://formsubmit.co/rsantos.luana@gmail.com" method="POST" class="form">
-                    <div class="form_mensagem">
-                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 2</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 3</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 4</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 5</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 6</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="https://agenda-xda4.onrender.com/" target="_blank" class="projeto-card">
+                        <img src="./assets/imgs/agenda.png" alt="Agenda">
+                    </a>
+                    <div class="projeto-info">
+                        <strong>Agenda</strong>
+                        <p>Sistema completo de gerenciamento de contatos com Node.js, Express e MongoDB.</p>
                     </div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 2</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 3</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 4</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 5</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+                <div class="projeto-item">
+                    <a href="#" class="projeto-card"><img src="./assets/imgs/agenda.png"></a>
+                    <div class="projeto-info"><strong>Projeto 6</strong><p>Descrição do sistema desenvolvido.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <div class="enviar_email">
-                        <input type="email" id="email" name="email" placeholder="E-mail" required>
-                    </div>
-
-                    <div class="enviar_assunto">
-                        <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
-                    </div>
-
-                    <div class="enviar_mensagem">
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
-                    </div>
-
-                    <button type="submit" class="enviar" >Enviar</button>
-                </form>
-            </section>
-
-            <aside class="sidebar-voltar">
-                <a href="#"><img src="./assets/imgs/pra-cima.png" alt="voltar"></a>
-            </aside>
-
-        </main>
+<script>
+    window.onload = () => {
+        const carrossel = document.getElementById('meu-carrossel');
+        let step = 3; 
+        let autoScroll;
+        function start() {
+            autoScroll = setInterval(() => {
+                carrossel.scrollLeft += step;
+                if (carrossel.scrollLeft >= carrossel.scrollWidth / 2) {
+                    carrossel.scrollLeft = 0;
+                }
+            }, 15);
+        }
+        start();
+        carrossel.onmouseenter = () => clearInterval(autoScroll);
+        carrossel.onmouseleave = start;
+    };
+</script>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
